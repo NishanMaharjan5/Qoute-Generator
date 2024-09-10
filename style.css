@@ -48,3 +48,40 @@ body {
   button:hover {
     background-color: #0056b3;
   }
+
+  #theme-toggle {
+    margin-top: 20px;
+    background-color: black;
+  }
+  
+  #theme-toggle:hover {
+    background-color: burlywood;
+  }
+  
+
+  body.dark-mode {
+    background-color: black;
+    color: #f4f4f9;
+  }
+  
+  .quote-container.dark-mode {
+    background-color: lightgoldenrodyellow;
+    color: white;
+  }
+ 
+  
+  button.dark-mode {
+    background-color: #007bff;
+  }
+  
+  button.dark-mode:hover {
+    background-color: #0056b3;
+  }
+  
+  #theme-toggle.dark-mode {
+    background-color: black;
+  }
+  
+  #theme-toggle.dark-mode:hover {
+    background-color:black;
+  }

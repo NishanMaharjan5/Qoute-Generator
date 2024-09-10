@@ -42,3 +42,12 @@ function randomQuote() {
     currentIndex = Math.floor(Math.random() * quotes.length);
     document.getElementById("quote").innerText = quotes[currentIndex];
 }
+
+function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+    document.querySelector(".quote-container").classList.toggle("dark-mode");
+    document.querySelectorAll("button").forEach(button => button.classList.toggle("dark-mode"));
+
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    themeToggleBtn.innerText = document.body.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode";
+}
