@@ -13,10 +13,17 @@
     
     <h1>QUOTE OF THE DAY</h1>
 
-    <select id="category" onchange="">
+    <select id="category" onchange="nextQuote()">
         <option value="science">Science</option>
         <option value="history">History</option>
     </select>
+
+    <div class="buttons">
+        <button id="prev-quote" onclick="prevQuote()">Previous</button>
+        <button id="next-quote" onclick="nextQuote()">Next</button>
+        <button id="random-quote" onclick="randomQuote()">Random</button>
+      </div>
+  
   
     
     <div id="quote" style="font-size: 16px;">Click 'Next' to get a new quote!</div>
