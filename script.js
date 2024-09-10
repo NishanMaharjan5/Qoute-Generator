@@ -51,3 +51,15 @@ function toggleTheme() {
     const themeToggleBtn = document.getElementById("theme-toggle");
     themeToggleBtn.innerText = document.body.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode";
 }
+
+function increaseFontSize() {
+    let quoteElement = document.getElementById("quote");
+    let currentFontSize = parseFloat(window.getComputedStyle(quoteElement).fontSize);
+    quoteElement.style.fontSize = (currentFontSize + 2) + "px";
+}
+
+function decreaseFontSize() {
+    let quoteElement = document.getElementById("quote");
+    let currentFontSize = parseFloat(window.getComputedStyle(quoteElement).fontSize);
+    quoteElement.style.fontSize = (currentFontSize - 2) + "px";
+}
