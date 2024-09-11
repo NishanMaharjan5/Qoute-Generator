@@ -85,3 +85,23 @@ body {
   #theme-toggle.dark-mode:hover {
     background-color:black;
   }
+
+  @media only screen and (max-width: 600px) {
+    .quote-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    #quote {
+      font-size: 1rem;
+    }
+  
+    button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
