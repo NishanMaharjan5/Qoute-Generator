@@ -38,9 +38,10 @@ function prevQuote() {
 
 
 function randomQuote() {
-    const quotes = getSelectedCategory();
-    currentIndex = Math.floor(Math.random() * quotes.length);
-    document.getElementById("quote").innerText = quotes[currentIndex];
+    const combinedQuotes = scienceQuotes.concat(historyQuotes);
+    const randomIndex = Math.floor(Math.random() * combinedQuotes.length);
+    document.getElementById("quote").innerText = combinedQuotes[randomIndex];
+
 }
 
 function toggleTheme() {
